@@ -1,0 +1,109 @@
+/* Styling */
+
+:root {
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey-700: hsl(0, 0%, 20%);
+    --grey-800: hsl(0, 0%, 12%);
+    --grey-900: hsl(0, 0%, 8%);
+}
+
+* {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    color: var(--white);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body {
+    background-color: var(--grey-900);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    background-color: var(--grey-800);
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: min(27em, 90%);
+    padding: 3em;
+    border-radius: 15px;
+}
+
+img {
+    height: 7em;
+    width: 7em;
+    border-radius: 50%;
+}
+
+.text-block {
+    margin: 2em 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.8em;
+    font-weight: 500;
+}
+
+.location {
+    margin-top: 0.7em;
+    font-weight: 700;
+    color: var(--green);
+}
+
+.bio {
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* min-height: 50%; */
+    justify-content: space-between;
+}
+
+.buttons a {
+    background-color: var(--grey-700);
+    font-weight: 700;
+    margin: 0.5em 0;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+.buttons a:first-child {
+    margin-top: 0;
+}
+
+.buttons a:last-child {
+    margin-bottom: 0;
+}
+
+.buttons a:hover {
+    background-color: var(--green);
+    color: var(--grey-800);
+    cursor: pointer;
+}
+
+footer {
+    margin: auto 0 1em 0;
+    font-size: 0.7em;
+}
+
+footer a:hover {
+    color: var(--green);
+}
+
+@media only screen and (max-width: 440px) {
+    .container {
+        padding: 2em;
+    }
+}
